@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.flex-area {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.flex-vertical {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    border: 1px solid blue;
+}
+
+.heading {
+    border-bottom: 1px solid yellow;
+    width: 100%;
+    height: 30%;
+}
+
+.question {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+section {
+    position: absolute;
+    inset: 25%;
+    background-color: white;
+    color: black;
+    display: none;
+}
+
+.questions, .answers {
+    display: none;
+}

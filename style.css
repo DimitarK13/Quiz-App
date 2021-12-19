@@ -8,9 +8,9 @@
 }
 
 .flex-area {
-    width: 100vw;
-    height: 100vh;
+    height: 99vh;
     display: flex;
+    gap: .25em;
 }
 
 .flex-vertical {
@@ -18,11 +18,10 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    
+    gap: .25em;
 }
 
 .heading {
-    border-bottom: 2px solid white;
     width: 100%;
     height: 30%;
     display: flex;
@@ -32,16 +31,12 @@
     font-weight: bold;
     background-color: #333;
     color: white;
-}
-
-.heading:not(:last-child) {
-    border-right: 2px solid white;
+    border-radius: .25em;
 }
 
 .question {
     width: 100%;
     height: 100%;
-    border-right: 2px solid rgb(95, 95, 95);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -49,17 +44,14 @@
     font-size: 2rem;
     background-color: rgb(223, 245, 218);
     color: rgb(0, 94, 47);
-}
-
-.question:not(:last-child) {
-    border-bottom: 2px solid rgb(95, 95, 95);
+    border-radius: .25em;
 }
 
 section {
     position: absolute;
     inset: 20%;
-    background-color: rgb(255 255 255 / .8);
-    backdrop-filter: blur(1em);
+    background-color: rgb(255 255 255 / .6);
+    backdrop-filter: blur(.5em);
     border-radius: 1em;
     color: black;
     
@@ -75,7 +67,7 @@ section {
 
 .questions, .answers {
     display: none;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
     cursor: pointer;
     color: rgb(0, 94, 47);

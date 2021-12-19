@@ -54,7 +54,14 @@ section {
     backdrop-filter: blur(.5em);
     border-radius: 1em;
     color: black;
-    
+    opacity: 0;
+    animation: display 250ms ease-in-out forwards;
+}
+
+@keyframes display {
+    to {
+        opacity: 1;
+    }
 }
 
 .display {
@@ -72,6 +79,8 @@ section {
     cursor: pointer;
     color: rgb(0, 94, 47);
     text-align: center;
+    opacity: 0;
+    animation: display 250ms ease-in-out forwards;
 }
 
 .close {

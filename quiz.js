@@ -14,5 +14,11 @@ for (let i = 0; i < question.length; i++) {
                 this.style.display = 'none';
                 answers.style.display = 'block';
             })
+
+        document.querySelector('#closeBtn').addEventListener('click', function() {
+            section.style.display = 'none';
+            questions.style.display = 'none';
+            answers.style.display = 'none';
+        })
     })
 }

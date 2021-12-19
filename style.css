@@ -81,3 +81,11 @@ section {
     color: rgb(0, 94, 47);
     text-align: center;
 }
+
+.close {
+    position: inherit;
+    right: .75em;
+    top: .5em;
+    font-size: 2rem;
+    cursor: pointer;
+}

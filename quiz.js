@@ -4,6 +4,7 @@ section.style.display = 'none';
 
 for (let i = 0; i < question.length; i++) {
     question[i].addEventListener('click', function() {
+        this.style.filter = "grayscale(1)";
         let questionId = this.getAttribute('id');
         let questions = document.getElementById('q' + questionId);
         let answers = document.getElementById('a' + questionId);
